@@ -28,6 +28,7 @@ namespace CretaceousPark.Controllers
         [HttpPost]
         public void Post([FromBody] string value)
         {
+            Console.WriteLine(value);
         }
 
         // PUT api/values/5
@@ -43,3 +44,5 @@ namespace CretaceousPark.Controllers
         }
     }
 }
+
+// The MVC applications we've been creating the last few weeks have been serving HTML, which we access through the browser. Instead of serving HTML, this API serves JSON data. APIs use other formats such as XML as well, but JSON is the most common. lesson 3
