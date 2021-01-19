@@ -41,7 +41,7 @@ namespace CretaceousPark
                 app.UseHsts();
             }
 
-            // app.UseHttpsRedirection();
+            // app.UseHttpsRedirection(); This method causes our server to reroute all traffic to the HTTPS port on our server. This increases application security but it can cause our browser to prevent access to the site and will slow us down when we're developing our project
             app.UseMvc();
         }
     }
